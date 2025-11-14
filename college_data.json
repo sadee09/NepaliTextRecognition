@@ -1,0 +1,451 @@
+{
+    "intents":[
+        {
+            "tag":"greeting",
+            "patterns":[
+                "Hi",
+                "Hey",
+                "Is anyone there?",
+                "Hello",
+                "Hay",
+                "नमस्कार",
+                "हेल्लो",
+                "नमस्ते"
+            ],
+            "responses":[
+                "नमस्कार kec chatbot मा स्वागत छ। म तपाईलाई कसरी मद्दत् गर्नसक्छु?",
+                "नमस्कार kec chatbot मा स्वागत छ। कृपया हाम्रो कलेजसँग सम्बन्धित प्रश्नहरू सोध्नुहोस्।"
+            ]
+        },
+        {
+            "tag":"goodbye",
+            "patterns":[
+                "Bye",
+                "धन्यवाद",
+                "Goodbye",
+                "thankyou",
+                "ए",
+                "ल",
+                "ok",
+                "हुन्छ"
+            ],
+            "responses":[
+                "हाम्रो च्याटबोट प्रयोग गर्नुभएकोमा धन्यवाद। हजुर को दिन राम्रो होस्।"
+            ]
+        },
+        {
+            "tag":"location",
+            "patterns":[
+                "यो कलेज कहाँ छ?",
+                "kec कहाँ छ?",
+                "kec kaha cha?",
+                "college kaha cha?",
+                "yo college kaha cha?",
+                "kec kata cha?",
+                "कलेज कता छ?"
+            ],
+            "responses":[
+                "काठमाडौं इन्जिनियरिङ कलेज कालीमाटी, काठमाडौंमा अवस्थित छ। थप जानकारीको लागि कृपया Google Map प्रयोग गर्नुहोस्।"
+            ]
+        },
+        {
+            "tag":"aboutme",
+            "patterns":[
+                "tapai ko ho?",
+                "who are you?",
+                "तपाई को हो?",
+                "म को सँग कुरा गर्दैछु?",
+                "tapai chei ko ho ni?"
+            ],
+            "responses":[
+                "म काठमाडौं इन्जिनियरिङ कलेजका चौथो वर्षका विद्यार्थीहरूले तयार पारेको काठमाडौं इन्जिनियरिङको च्याटबोट हुँ।"
+            ]
+        },
+        {
+            "tag":"faculty",
+            "patterns":[
+                "काठमाडौं इन्जिनियरिङ कलेजमा केके पढाउनुहुन्छ?",
+                "yaha k k padai huncha?",
+                "yaha kun kun faculty cha?",
+                "याहा कुन कुन संकाय छ?",
+                "what are the faculties in kec?",
+                "faculty haru k k cha?"
+            ],
+            "responses":[
+                "हामी KEC मा व्यावहारिक र सैद्धान्तिक ईन्जिनियरिङ् अध्ययनहरूमा ध्यान केन्द्रित गरी स्नातक डिग्री पाठ्यक्रमहरूको भरपर्दो छनोट प्रदान गर्दछौं: वास्तुकला, सिभिल इन्जिनियरिङ्, कम्प्युटर इन्जिनियरिङ्, इलेक्ट्रिकल इन्जिनियरिङ्, इलेक्ट्रोनिक्स र कम्युनिकेसन इन्जिनियरिङ् जस्तै विषयहरू पढाइन्छ।"
+            ]
+        },
+        {
+            "tag":"extracurriculumactivities",
+            "patterns":[
+                "तपाइँको कलेज मा अतिरिक्त पाठ्यक्रम गतिविधिहरु के गरिन्छ?",
+                "yaha extra curriculum activites haru k k hucha?",
+                "what are extra curriculum activities done in your college?"
+            ],
+            "responses":[
+                "यहाँ धेरै अतिरिक्त पाठ्यक्रम गतिविधिहरू जस्तै DRISTI र अन्य धेरै कार्यक्रमहरू छन्। केईसीका विद्यार्थीहरूलाई अतिरिक्त योग कक्षाहरू पनि दिइन्छ।"
+            ]
+        },
+        {
+            "tag":"collegetime",
+            "patterns":[
+                "कलेजको समय कति हो?",
+                "what is the college time?",
+                "college ko time k ho?",
+                "college time?",
+                "college kati bela bata suru huncha?"
+            ],
+            "responses":[
+                "कलेजको समय बिहान ७:१५ बाट सुरु हुन्छ र सामान्यतया कलेजको दिनचर्या अनुसार ३ बजे समाप्त हुन्छ।"
+            ]
+        },
+        {
+            "tag":"clubs",
+            "patterns":[
+                "केईसीमा उपस्थित क्लबहरू के छन्?",
+                "what are the clubs present in kathmandu engineering college?",
+                "how many clubs are present in kathmandu engineering college",
+                "kathmandu engineering college ma kun kun club chan?"
+            ],
+            "responses":[
+                "काठमाडौं इन्जिनियरिङ कलेजमा म्युजिक क्लब, आईटी क्लब, आकार, रोबोटिक्स क्लब र अन्य धेरै क्लबहरू छन्।"
+            ]
+        },
+        {
+            "tag":"programs",
+            "patterns":[
+                "yo college ma k k program huncha?",
+                "तपाईको कलेजमा केके कार्यक्रम हुन्छ?",
+                "tapai ko college ma k k karyakram huncha?",
+                "tapai ko college ma k k program huncha?"
+            ],
+            "responses":[
+                "यहाँ धेरै कार्यक्रमहरू हुन्छन्, जस्तै स्वागत विदाई कार्यक्रम, खेल सप्ताह, सांगीतिक कार्यक्रम र अन्य धेरै।"
+            ]
+        },
+        {
+            "tag":"error",
+            "patterns":[
+                "कलेजको समय कति ह",
+                "what iss the colleg time?",
+                "collegee ko time k ho?",
+                "केईसीम उपस्थित क्लबहरू के छन्?",
+                "collegee ko time k ho?",
+                "asdf",
+                ".",
+                "....",
+                ",,,",
+                "oee",
+                "के छ?",
+                "?",
+                "tapa chei ko ho ni?",
+                "asdfghjkl",
+                "qwerty",
+                "zxcvbnm",
+                "halo",
+                "फ्रान्स दुई पल्ट विश्वकप जित्ने तेस्रो टिम",
+                "शुक्रबार पार्टी एकतालाई अन्तिम रुप दिइन्छ : प्रचण्ड",
+                "tell me a joke",
+                "adfa afdf werioadf dsdfa dafaf",
+                "what the hell",
+                "काठमाडौँ — एप्पलले सन् २०१८ मा तीन नयाँ मोडलका फोनहरु सार्वजनिक गर्ने तयारी गरिरहेको छ । कम्पनीले आधिकारिक रुपमा नयाँ फोन सार्वजनिक गर्ने मिति तय भने गरेको छैन । विभिन्न सञ्चारमाध्यमका अनुसार कम्पनीले आइफोन–एक्सको अपडेटेड भर्सन सेप्टेम्बरसम्म सार्वजनिक गर्नेछ। ब्लमबर्गको रिर्पोट अनुसार एप्पलले ६.५ इन्च डिस्प्ले भएको नयाँ आइफोन सार्वजनिक गर्न सक्ने जनाएको छ। उक्त फोनलाई डी–३३ को कोड नाम दिइएको छ। डी–३२ कोड भएको दोस्रो फोन आइफोन–एक्सको अपडेटेड भर्सन हुनेछ। यस्तै, तेस्रो मोडलको फोन आइफोन–एक्सभन्दा केही सस्तो हुने बताइएको छ। फोनमा एड्ज–टू एड्ज डिस्प्ले र फेस आइडी जस्ता फिचरहरु रहने द इन्डियन एक्सप्रेसले जनाएको छ। एप्पलको नयाँ मोडलका आइफोनहरुमा ए–१२ चिपहरु प्रयोग हुनेछन्। कम्पनीले यही मार्च २७ तारिख अमेरिकाको सिकागोमा सस्तो म्याकबुक र आइप्याडहरुको घोषणा गर्ने कार्यक्रम तय गरेको छ। फलेवास, पर्वत — हिमालपारिको जिल्ला मुस्ताङमा शुक्रबार भएको टिपर दुर्घटनाका २० जनाको शव पोखरा पठाइएको छ । दुर्घटनामा परी मृत्यु भएका र घाइते कोही पनि मुस्ताङका नभएका कारण जिल्ला सुरक्षा समिति मुस्ताङले सबै घाइते र शव पोखरा लाने निर्णय गरेको थियो । बेनी–जोमसोम– कोरला सडकखण्डको दामोदरकुण्ड गाउँपालिका–३ स्थित स्याङ्बोचेमा कालीगण्डकी करिडोर निर्माणमा काम गरिरहेका कामदार बोकेको बा२क २२१९ नम्बरको टिपर शुक्रबार अपराह्न २ बजे दुर्घटना भएको थियो ।",
+                "janak dangol on एमाले पार्टि होइन क्लब हुँदैछ"
+            ],
+            "responses":[
+                "kec chatbot प्रयोग गर्नुभएकोमा धन्यवाद। कृपया सही प्रश्न सोध्नुहोस्।"
+            ]
+        },
+        {
+            "tag":"computerengineeringseats",
+            "patterns":[
+                "computer engineering ma kati ota seat huncha?",
+                "कम्प्युटर इन्जिनियरिङमा कति सिट हुन्छ?",
+                "BCT ma kati ota seat huncha?",
+                "Bct ma kati ota seat huncha?",
+                "bct ma kati ota seat huncha?"
+            ],
+            "responses":[
+                "कम्प्युटर इन्जिनियरिङमा हरेक वर्ष ९६ सिट हुन्छन् ।"
+            ]
+        },
+        {
+            "tag":"civilengineeringseats",
+            "patterns":[
+                "civil engineering ma kati ota seat huncha?",
+                "सिभिल इन्जिनियरिङमा कति सिट हुन्छ?",
+                "BCE ma kati ota seat huncha?",
+                "bce ma kati ota seat huncha?",
+                "Bce ma kati ota seat huncha?"
+            ],
+            "responses":[
+                "सिभिल इन्जिनियरिङमा हरेक वर्ष ९६ सिट हुन्छन् ।"
+            ]
+        },
+        {
+            "tag":"architectureseats",
+            "patterns":[
+                "architecture ma kati ota seat huncha?",
+                "वास्तुकलामा कति सिट हुन्छ?",
+                "ARCHI ma kati ota seat huncha?",
+                "archi ma kati ota seat huncha?"
+            ],
+            "responses":[
+                "कलेजको समय बिहान ७:१५ बाट सुरु हुन्छ र सामान्यतया कलेजको दिनचर्या अनुसार ३ बजे समाप्त हुन्छ।"
+            ]
+        },
+        {
+            "tag":"electronicsengineeringseats",
+            "patterns":[
+                "electronics engineering ma kati ota seat huncha?",
+                "Electronics engineering ma kati ota seat huncha?",
+                "इलेक्ट्रोनिक्स इन्जिनियरिङमा कति सिट हुन्छ?",
+                "BEL ma kati ota seat huncha?",
+                "Bel ma kati ota seat huncha?"
+            ],
+            "responses":[
+                "इलेक्ट्रोनिक्स इन्जिनियरिङमा हरेक वर्ष ९६ सिट हुन्छन् ।"
+            ]
+        },
+        {
+            "tag":"contactnumber",
+            "patterns":[
+                "मलाई तपाईको कलेजको सम्पर्क नम्बर दिनुहोस्।",
+                "तपाई को कालेजको नंबर कती हो?",
+                "College ko number?",
+                "तपाई को कालेजको नंबर कती हो?",
+                "Malai college ko number dinu na?",
+                "k ma college ko number pauna sakchu?",
+                "तपाई को कालेजको नंबर कती हो?",
+                "मलाई कलेज को नम्बर दिनु त"
+            ],
+            "responses":[
+                "काठमाडौं इन्जिनियरिङ कलेजको सम्पर्क नम्बर +९७७-०१-५३७२८३३, ५३७२६५३ हो।"
+            ]
+        },
+        {
+            "tag":"collegetime",
+            "patterns":[
+                "कलेजको समय कति हो?",
+                "what is the college time?",
+                "college ko time k ho?"
+            ],
+            "responses":[
+                "कलेजको समय बिहान ७:१५ बाट सुरु हुन्छ र सामान्यतया कलेजको दिनचर्या अनुसार ३ बजे समाप्त हुन्छ।"
+            ]
+        },
+        {
+            "tag":"admissiondocuments",
+            "patterns":[
+                "भर्नाका लागि आवश्यक कागजातहरू के के हुन्?",
+                "एडमिसनको लागी केके डकुमेन्ट चाहिन्छन्?",
+                "भर्नाका लागि के के चाहिन्छ?",
+                "भर्नाका लागि कागजातहरू के के हुन्?",
+                "Admission ko lagi k k document chaincha?"
+            ],
+            "responses":[
+                "भर्नाको लागि मार्क-सिटहरू, क्यारेक्टर सर्टिफिकेटहरू र S.L.C, I.Sc को ट्रान्सक्रिप्ट। / 10+2 / I.E/ A स्तर/CBSCविद्यार्थीको 2 पासपोर्ट साइज फोटो र आमाबाबु र अभिभावकको 1 फोटो।उनको/उनको नागरिकताको प्रतिलिपिमाइग्रेसन प्रमाणपत्रजैविकवा शारीरिक समूह आवेदकको लागि 200 अंक गणित प्रमाणपत्र।IOE, पुल्चोक द्वारा दिइएको मूल स्कोर कार्ड भर्नाको समयमा पेश गर्नुपर्नेछ।"
+            ]
+        },
+        {
+            "tag":"other",
+            "patterns":[
+                "aru?",
+                "अर्को?",
+                "अनी?",
+                "अरु",
+                "अरु?",
+                "अनी",
+                "अरु केही?"
+            ],
+            "responses":[
+                "कथप विवरणहरूको लागि कृपया एक पटक कलेजमा जानुहोस्।"
+            ]
+        },
+        {
+            "tag":"deploma",
+            "patterns":[
+                "यहा डिप्लोमा पढाई हुन्छ कि हुदैन?",
+                "केईसीमा डिप्लोमा छ?",
+                "मलाई डिपलेमा पढाई हुन्छ कि हुदैन भन्दिनु न?",
+                "के म केईसीमा डिप्लोमा पढ्न पाउछु?",
+                "yaha deploma ni padai huncha?",
+                "kec ma deploma cha ki chaina?"
+            ],
+            "responses":[
+                "काठमाडौं इन्जिनियरिङ कलेजमा डिप्लोमा कोर्स छैन।"
+            ]
+        },
+        {
+            "tag":"computerhod",
+            "patterns":[
+                "कम्प्युटर इन्जिनियरिङ् को HOD को हो",
+                "कम्प्युटर इन्जिनियरिङ् को HOD को हो?",
+                "Computer engineering ko hod ko ho",
+                "कम्प्युटर इन्जिनियरिङ् को hod को हो?",
+                "कम्प्युटर इन्जिनियरिङ् को hod को हो",
+                "Computer engineering ko HOD ko ho?"
+            ],
+            "responses":[
+                "कम्प्युटर इन्जिनियरिङका एचओडी er.सुदीप शाक्य हुन् ।"
+            ]
+        },
+        {
+            "tag":"electricalhod",
+            "patterns":[
+                "इलेक्ट्रिकल इन्जिनियरिङ् को HOD को हो?",
+                "इलेक्ट्रिकल इन्जिनियरिङ् को hod को हो",
+                "Electrical engineering ko hod ko ho?",
+                "Electrical engineering ko hod ko ho?"
+            ],
+            "responses":[
+                "इलेक्ट्रिकल इन्जिनियरिङ विभागका एचओडी er.बिनोद भण्डारी हुन् ।"
+            ]
+        },
+        {
+            "tag":"civilhod",
+            "patterns":[
+                "सिभिल इन्जिनियरिङ को H.O.D को हो?",
+                "सिभिल इन्जिनियरिङ को H.O.D को हो",
+                "civil engineering ko hod ko ho?",
+                "civil engineering ko hod ko ho"
+            ],
+            "responses":[
+                "Er.अर्जुन पोडेल सिभिल इन्जिनियरिङका प्रमुख हुन् ।"
+            ]
+        },
+        {
+            "tag":"electronicshod",
+            "patterns":[
+                "इलेक्ट्रोनिक्स इन्जिनियरिङ को HOD को हो",
+                "इलेक्ट्रोनिक्स इन्जिनियरिङ को HOD को हो?",
+                "electronics engineering ko hod ko ho?",
+                "electronics engineering ko hod ko ho"
+            ],
+            "responses":[
+                "er.सगुन मानन्दर इलेक्ट्रोनिक्स विभागका प्रमुख हुन् ।"
+            ]
+        },
+        {
+            "tag":"architecturehod",
+            "patterns":[
+                "आर्किटेक्चर को HOD को हो?",
+                "आर्किटेक्चर को HOD को हो",
+                "architecture ko hod ko ho?",
+                "architecture ko hod ko ho",
+                "archi ko hod ko ho?",
+                "archi ko hod ko ho"
+            ],
+            "responses":[
+                "Ar.कैलाश श्रेष्ठ आर्किटेक्चर विभागका प्रमुख हुन् ।"
+            ]
+        },
+        {
+            "tag":"principle",
+            "patterns":[
+                "kec को सिद्धान्त को हो?",
+                "kec को प्रिन्सिपल को हो?",
+                "kec को प्रधान अध्यापक को हो?",
+                "kec को प्रमुख को हो?",
+                "kec ko principle ko ho?",
+                "kec ko principal ko ho"
+            ],
+            "responses":[
+                "er.हिरेन्द्रमान प्रधान काठमाडौं इन्जिनियरिङ कलेजका प्रधान अध्यापक हुन् ।"
+            ]
+        },
+        {
+            "tag":"chairman",
+            "patterns":[
+                "केईसीका अध्यक्ष को हुन् ?",
+                "kec ko adakshya ko ho?",
+                "केईसीका अध्यक्ष को हुन्",
+                "kec ko chairman ko ho?",
+                "kec ko chairman ko ho"
+            ],
+            "responses":[
+                "हिरेन्द्रमान प्रधान काठमाडौं इन्जिनियरिङ कलेजका अध्यक्ष हुन् ।"
+            ]
+        },
+        {
+            "tag":"viceprinciple",
+            "patterns":[
+                "kec ko vice principal ko ho?",
+                "kec ko vice principal ko ho",
+                "kec ko vice principal ko hun?",
+                "यस कलेजको उपप्राचार्य को हुनुहुन्छ?",
+                "केईसीका उपप्रमुख को हुन् ?"
+            ],
+            "responses":[
+                "Ar.शैलिता मानन्धर जोशी काठमाडौं इन्जिनियरिङ कलेजकी उपप्राचार्य हुन् ।"
+            ]
+        },
+        {
+            "tag":"feestructure",
+            "patterns":[
+                "kec ma fee structure kasto cha?",
+                "के म तपाईको कलेजको शुल्क संरचना बारे जानकारी पाउन सक्छु?",
+                "k ma free structure bare jankari pauna sakchu?",
+                "k ma fee structure bare jankari pauna sakchu"
+            ],
+            "responses":[
+                "काठमाडौं इन्जिनियरिङ कलेजमा हरेक वर्ष १० प्रतिशतले शुल्क वृद्धि हुने गरेको छ। तपाइँ कलेज भ्रमण गरेर शुल्क संरचना बारे थप जानकारी प्राप्त गर्न सक्नुहुन्छ।"
+            ]
+        },
+        {
+            "tag":"scholarshipscheme",
+            "patterns":[
+                "yesh college ma scholarship scheme kasto cha?",
+                "scholarship kasari pauna sakincha?",
+                "scholarship kasari paincha",
+                "scholarship k ko adar ma paincha?",
+                "scholarship ko lagi k garnu parcha?",
+                "तपाईको कलेजमा कसरी छात्रवृत्ति प्राप्त गर्न सकिन्छ?",
+                "छात्रवृत्ति को लागी मापदण्ड के हो?",
+                "scholarship ko lagi k criteria cha?"
+            ],
+            "responses":[
+                "छात्रवृत्ति ioe प्रवेश श्रेणी अनुसार दिइन्छ। प्रत्येक विभागका तीन शीर्ष विद्यार्थीहरूलाई एक सेमेस्टर छात्रवृत्ति पनि दिइन्छ।"
+            ]
+        },
+        {
+            "tag":"accomodationfacilities",
+            "patterns":[
+                "तपाईको कलेजमा होस्टेलको सुविधा छ?",
+                "तपाईको कलेजमा होस्टेल छ?",
+                "college ko hostel cha ki chaina?",
+                "hostel ko subida kasto cha?",
+                "college ma hostel cha ki chaina?"
+            ],
+            "responses":[
+                "IOE प्रवेशमा राम्रो अंक ल्याउने विद्यार्थीका लागि काठमाडौं इन्जिनियरिङ कलेजमा होस्टेलको सुविधा छ। होस्टल बारे थप जानकारीको लागि कृपया होस्टल वार्डनसँग सम्पर्क गर्नुहोस्।"
+            ]
+        },
+        {
+            "tag":"collagedays",
+            "patterns":[
+                "hapta ma college kati din huncha?",
+                "week ma kati din college huncha?",
+                "hapta ma kati din college lagcha?",
+                "हप्तामा कति दिन कलेज हुन्छ?",
+                "कलेज हप्तामा कति दिन चल्छ?"
+            ],
+            "responses":[
+                "शनिबार र आइतबार बाहेक हप्तामा ५ दिन कक्षा हुनेछ ।"
+            ]
+        },
+        {
+            "tag":"studentnumber",
+            "patterns":[
+                "कलेजमा कति विद्यार्थी छन्?",
+                "how many students are there in college?",
+                "kec ma kati jana student chan",
+                "kec ma bidyarthi kati chan",
+                "kec ma total students kati chan",
+                ""
+            ],
+            "responses":[
+                ""
+            ]
+        }
+    ]
+}

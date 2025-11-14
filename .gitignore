@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Old/development model versions (keep chat_model_final/)
+chat_model/
+chat_model_v2/
+chat_model_v3/
+
+# Old/development pickle files (keep *_final.pickle files)
+tokenizer.pickle
+tokenizer_v2.pickle
+tokenizer_v3.pickle
+label_encoder.pickle
+label_encoder_v2.pickle
+label_encoder_v3.pickle
+
+# Old data files (keep updated_*.json files)
+college_data.json
+response_data.json

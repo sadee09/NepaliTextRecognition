@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Namaskar KEC!</title>
+</head>
+<body>
+    
+<div class="--dark-theme" id="chat">
+  <div class="chat__conversation-board msger-chat">
+    <div class="chat__conversation-board__message-container left">
+      <div class="chat__conversation-board__message__person">
+        <div class="chat__conversation-board__message__person__avatar"><img src="{{url_for('static', filename='kec.jpg')}}"/></div><span class="chat__conversation-board__message__person__nickname">Monika Figi</span>
+      </div>
+      <div class="chat__conversation-board__message__context">
+        <div class="chat__conversation-board__message__bubble"> <span>नमस्कार kec chatbot मा स्वागत छ। म तपाईलाई कसरी मद्दत् गर्नसक्छु?</span></div>
+      </div>
+    </div>
+    <!-- <div class="chat__conversation-board__message-container reversed">
+      <div class="chat__conversation-board__message__person">
+        <div class="chat__conversation-board__message__person__avatar"><img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Dennis Mikle"/></div><span class="chat__conversation-board__message__person__nickname">Dennis Mikle</span>
+      </div>
+      <div class="chat__conversation-board__message__context">
+        <div class="chat__conversation-board__message__bubble"> <span>Winamp's still an essential.</span></div>
+      </div>
+    </div> -->
+  </div>
+    <div class="chat__conversation-panel">
+      <div class="chat__conversation-panel__container">
+        <form class="msger-inputarea">
+          <input class="chat__conversation-panel__input panel-item msger-input" placeholder="Type a message..."/>
+          <button class="chat__conversation-panel__button panel-item btn-icon send-message-button" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-reactid="1036">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form> 
+      </div>
+    </div>
+  </div>
+  <script>
+    const msgerForm = get(".msger-inputarea");
+    const msgerInput = get(".msger-input");
+    const msgerChat = get(".msger-chat");
+
+    const BOT_IMG = "{{url_for('static', filename='kec.jpg')}}";
+    const PERSON_IMG = "{{url_for('static', filename='user.jpg')}}";
+    const BOT_NAME = "ChatBot";
+    const PERSON_NAME = "You";
+
+    msgerForm.addEventListener("submit", event => {
+      event.preventDefault();
+      const msgText = msgerInput.value;
+      if (!msgText) return;
+      appendMessage(PERSON_NAME, PERSON_IMG, "reversed", msgText);
+      console.log('done')
+      msgerInput.value = "";
+      botResponse(msgText);
+    });
+    function appendMessage(name, img, side, text) {
+      //   Simple solution for small apps
+      const msgHTML = `
+          <div class="chat__conversation-board__message-container ${side}">
+              <div class="chat__conversation-board__message__person">
+               <div class="chat__conversation-board__message__person__avatar"><img src=${img} /></div><span class="chat__conversation-board__message__person__nickname">${name}</span>
+            </div>
+            <div class="chat__conversation-board__message__context">
+              <div class="chat__conversation-board__message__bubble"> <span>${text}</span></div>
+            </div>
+          </div>
+         
+`;
+    msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+    msgerChat.scrollTop += 500;
+    }
+    function botResponse(rawText) {
+      // Bot Response
+      $.get("/get", { msg: rawText }).done(function (data) {
+        console.log(rawText);
+        console.log(data);
+        const msgText = data;
+        appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
+      });
+    }
+    function get(selector, root = document) {
+      return root.querySelector(selector);
+    }
+
+
+
+
+  </script>
+</body>
+</html>
